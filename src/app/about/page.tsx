@@ -1,15 +1,10 @@
+import clsx from 'clsx'
 import { type Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  XIcon,
-} from '@/components/SocialIcons'
+import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
 
 function SocialLink({
@@ -73,27 +68,37 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              At the heart of Nordic Nexus Designs is a passionate team scattered across the UK and Sweden, united by our love for creating magic on the digital canvas. We began our journey by turning our coding hobby into projects that excited us - crafting delightful personal hobby websites was just the start!
+              At the heart of Nordic Nexus Designs is a passionate team
+              scattered across the UK and Sweden, united by our love for
+              creating magic on the digital canvas. We began our journey by
+              turning our coding hobby into projects that excited us - crafting
+              delightful personal hobby websites was just the start!
             </p>
             <p>
-              Over time, our mission evolved. Now we're all about using our passion for design and technology to help small to medium-sized businesses thrive online. Your website is your digital storefront, and we love making it look its best. For us, each pixel holds the possibility to create something amazing, and we embrace that opportunity in each project we undertake.
+              Over time, our mission evolved. Now we're all about using our
+              passion for design and technology to help small to medium-sized
+              businesses thrive online. Your website is your digital storefront,
+              and we love making it look its best. For us, each pixel holds the
+              possibility to create something amazing, and we embrace that
+              opportunity in each project we undertake.
             </p>
             <p>
-              With Nordic Nexus Designs, you're not just getting a team, you're joining a journey, a movement towards better, more compelling digital experiences. We're excited to work together and shape the online landscape, one stunning website at a time.
+              With Nordic Nexus Designs, you're not just getting a team, you're
+              joining a journey, a movement towards better, more compelling
+              digital experiences. We're excited to work together and shape the
+              online landscape, one stunning website at a time.
             </p>
             <p>
-              As Nordic Nexus Designs strides forward, we're fueled by our passion to create, innovate, and empower businesses online. Our mission is to bring your ideas to life, crafting distinctive, compelling web experiences one pixel at a time. With us, your digital dreams become a reality.
+              As Nordic Nexus Designs strides forward, we're fueled by our
+              passion to create, innovate, and empower businesses online. Our
+              mission is to bring your ideas to life, crafting distinctive,
+              compelling web experiences one pixel at a time. With us, your
+              digital dreams become a reality.
             </p>
           </div>
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="#" icon={XIcon}>
-              Follow on X
-            </SocialLink>
-            <SocialLink href="#" icon={InstagramIcon} className="mt-4">
-              Follow on Instagram
-            </SocialLink>
             <SocialLink href="#" icon={GitHubIcon} className="mt-4">
               Follow on GitHub
             </SocialLink>

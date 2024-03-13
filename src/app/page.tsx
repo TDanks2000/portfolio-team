@@ -5,12 +5,7 @@ import Link from 'next/link'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  XIcon,
-} from '@/components/SocialIcons'
+import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
@@ -276,14 +271,12 @@ export default async function Home() {
             Nordic Nexus Designs.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Nordic Nexus Designs, your partner in navigating the digital landscape. Hailing from the shores of Sweden and the heart of the UK, we specialize in crafting customized web solutions that ensure your online presence stands out.           </p>
+            Nordic Nexus Designs, your partner in navigating the digital
+            landscape. Hailing from the shores of Sweden and the heart of the
+            UK, we specialize in crafting customized web solutions that ensure
+            your online presence stands out.{' '}
+          </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
-            <SocialLink
-              href="#"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
             <SocialLink
               href="#"
               aria-label="Follow on GitHub"
