@@ -1,15 +1,15 @@
 'use client'
 
-import { Fragment, useEffect, useRef, useState } from 'react'
+import { Popover, Transition } from '@headlessui/react'
+import clsx from 'clsx'
+import { useTheme } from 'next-themes'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useTheme } from 'next-themes'
-import { Popover, Transition } from '@headlessui/react'
-import clsx from 'clsx'
+import { Fragment, useEffect, useRef, useState } from 'react'
 
 import { Container } from '@/components/Container'
-import avatarImage from '@/images/avatar.jpg'
+import avatarImage from '@/images/avatar.png'
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -251,7 +251,7 @@ function Avatar({
         alt=""
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
-          'rounded-full bg-zinc-100 object-cover dark:bg-zinc-800',
+          'rounded-full  object-cover dark:invert',
           large ? 'h-16 w-16' : 'h-9 w-9',
         )}
         priority
